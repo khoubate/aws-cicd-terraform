@@ -58,5 +58,8 @@ resource "aws_security_group" "docker_on_ec2" {
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
+    tags = {
+    "Name" = "docker-on-ec2"
+  }
 }
 
